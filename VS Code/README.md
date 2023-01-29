@@ -1,5 +1,13 @@
 # VS Code Global Level User Setting [setting.json]
 
+### Steps to follow
+
+1. Open VS Code
+2. Go to Settings Or, press `Ctrl + ,`
+3. Click on the 3rd Icon from Top Right Side, named: `Open Settings (JSON)`
+4. Copy-Paste the below code
+5. Optional Font Installation: `FIRA CODE` (needs to installed to use)
+
 ```js
 // Shibam Saha
 // VS Code - User Settings [settings.json]
