@@ -75,7 +75,8 @@ In order to lint and format your React project automatically according to popula
 
 ### Install Dev Dependencies
 
-Multiple Commands: 
+**Multiple Commands:**
+
 ```sh
 yarn add -D prettier
 yarn add -D babel-eslint
@@ -84,7 +85,8 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 ```
 
 
-Single Command [Using Script]:
+**Single Command [Using Script]:**
+
 _Copy-Paste this new script in the scripts section of `package.json` file_
 
 ```json
