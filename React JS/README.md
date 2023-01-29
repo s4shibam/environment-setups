@@ -35,10 +35,10 @@ Follow the below settings for VS Code -
 
 ```js
 {
-  // Theme
-  "workbench.colorTheme": "Dracula",
+  // Theme - optional 
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
 
-  // config related to code formatting
+  // Code Formatting Configuration
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
@@ -49,14 +49,15 @@ Follow the below settings for VS Code -
     "editor.formatOnSave": false,
     "editor.defaultFormatter": null
   },
-  "javascript.validate.enable": false, // Disable all built-in syntax checking
+  "javascript.validate.enable": false, // Disables all built-in syntax checking
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true,
     "source.organizeImports": true
   },
   "eslint.alwaysShowStatus": true,
-  // emmet
+  
+  // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
