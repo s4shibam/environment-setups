@@ -1,6 +1,6 @@
 # VS Code Global Level User Setting [setting.json]
 
-```
+```js
 // Shibam Saha
 // VS Code - User Settings [settings.json]
 
