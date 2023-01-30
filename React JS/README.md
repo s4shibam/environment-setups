@@ -18,9 +18,8 @@ This Description contains the full guide to setup initial `React JS` project usi
 - [Linting Setup](#linting-setup)
   - [Install Dev Dependencies](#install-dev-dependencies)
   - [Create Linting Configuration file manually](#create-linting-configuration-file-manually)
-  - [Solve conflict between ".eslintrc.json" and "BaseConfig"](solve-conflict-between-".eslintrc.json"-and-"baseconfig")
+  - [Solve Linting Conflict](#solve-linting-conflict)
 
-<!-- Editor Setup -->
 
 ## Editor Setup
 
@@ -202,11 +201,16 @@ Create a `.eslintrc.json` file in the project root and Copy-Paste the below cont
   "plugins": ["prettier", "react", "react-hooks"]
 }
 ```
-### Solve conflict between ".eslintrc.json" and "BaseConfig"
+
+### Solve Linting Conflict
 
 After doing all these steps, there would occur a conflict between ".eslintrc.json" and "BaseConfig" due to version differences.
+
 `ERROR in [eslint] Plugin "react" was conflicted between ".eslintrc" and "BaseConfig .....`
 
 To solve this, create a file named, `.env` in `my-app-name` folder and paste the below code:
-`SKIP_PREFLIGHT_CHECK = true`
+
+```env
+SKIP_PREFLIGHT_CHECK = true
+```
 
