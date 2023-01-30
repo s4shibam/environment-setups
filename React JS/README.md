@@ -12,6 +12,9 @@ This Description contains the full guide to setup initial `React JS` project usi
   - [Plugins](#plugins)
   - [Settings](#settings)
   - [Set Line Breaks](#set-line-breaks)
+- [Setup React Project](#setup-react-project)
+  - [Create App](#create-app)
+  - [Run App](#run-app)
 - [Linting Setup](#linting-setup)
   - [Install Dev Dependencies](#install-dev-dependencies)
   - [Create Linting Configuration file manually](#create-linting-configuration-file-manually)
@@ -33,7 +36,7 @@ Install the below plugins:
 
 Follow the below settings for VS Code -
 
-1. Create a new folder called ".vscode" inside the project root folder
+1. Create a new folder called ".vscode" inside the React JS project folder (Setting will be applicable for all Reach.JS projects).
 2. Create a new file called "settings.json" inside that folder.
 3. Paste the below json in the newly created `settings.json` file and save the file.
 
@@ -72,11 +75,46 @@ Follow the below settings for VS Code -
 ### Set Line Breaks
 
 Make sure in VS Code Editor, "LF" is selected as line feed instead of CRLF (Carriage return and line feed).
-To do that, just click LF/CRLF in bottom right corner `Status Bar (Blue Color)` of editor, click it and change it to "LF". Else there would be errors in the setup.
+To do that, just click LF/CRLF in bottom right corner `Status Bar` of editor, click it and change it to "LF". Else there would be errors in the setup.
+
+<hr>
+
+## Setup React Project
+
+In order to create a react based project, follow the instructions below.
+
+### Create App
+To create a new app, you may choose one of the following methods:
+
+- npx
+```sh
+npx create-react-app my-app-name
+```
+
+- Yarn
+```sh
+yarn create react-app my-app-name
+```
+### Run App
+To run the initial project structure (React App),  follow the instructions below.
+
+- npm
+```sh
+cd my-app-name
+npm start
+```
+
+- Yarn
+```sh
+cd my-app-name
+yarn start
+```
+
+<hr>
 
 ## Linting Setup
 
-In order to lint and format your React project automatically according to popular airbnb style guide, I recommend you to follow the instructions below.
+In order to lint and format the React project automatically according to popular `airbnb` style guide, follow the instructions below.
 
 ### Install Dev Dependencies
 
@@ -100,9 +138,16 @@ _Copy-Paste this new script in the scripts section of `package.json` file_
 
 and then simply run the below command in the terminal -
 
+- Using Yarn:
 ```sh
-yarn lint #or 'npm run lint'
+yarn lint
 ```
+
+- Using npm:
+```sh
+npm run lint
+```
+<hr>
 
 ### Create Linting Configuration File Manually
 
