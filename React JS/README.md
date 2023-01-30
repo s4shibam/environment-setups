@@ -27,7 +27,7 @@ This Description contains the full guide to setup initial `React JS` project usi
   
 ### Plugins
 
-Install the below plugins:
+Install the below Plugins / Extensions in VS Code:
 
 - ESLint
 - Prettier - Code formatter
@@ -122,7 +122,6 @@ In order to lint and format the React project automatically according to popular
 
 ```sh
 yarn add -D prettier
-yarn add -D babel-eslint
 npx install-peerdeps --dev eslint-config-airbnb
 yarn add -D eslint-config-prettier eslint-plugin-prettier
 ```
@@ -133,7 +132,7 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 _Copy-Paste this new script in the scripts section of `package.json` file_
 
 ```json
-  "lint": "yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"
+  "lint": "yarn add -D prettier && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"
 ```
 
 and then simply run the below command in the terminal -
@@ -152,7 +151,7 @@ npm run lint
 
 Create a `.eslintrc.json` file in the project root and Copy-Paste the below contents:
 
-```js
+```json
 {
   "extends": [
     "airbnb",
@@ -161,9 +160,10 @@ Create a `.eslintrc.json` file in the project root and Copy-Paste the below cont
     "prettier",
     "plugin:jsx-a11y/recommended"
   ],
-  "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 8
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
   },
   "env": {
     "browser": true,
@@ -192,7 +192,7 @@ Create a `.eslintrc.json` file in the project root and Copy-Paste the below cont
         "trailingComma": "es5",
         "singleQuote": true,
         "printWidth": 100,
-        "tabWidth": 4,
+        "tabWidth": 2,
         "semi": true,
         "endOfLine": "auto"
       }
