@@ -1,4 +1,5 @@
-# VS Code Global Level User Setting [setting.json]
+# VS Code Global Level User Setting [setting.json] #
+[![VSCode](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](#)
 
 ### Steps to follow
 
