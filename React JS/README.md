@@ -12,18 +12,19 @@ This Description contains the full guide to setup initial `React JS` project usi
   - [Plugins](#plugins)
   - [Settings](#settings)
   - [Set Line Breaks](#set-line-breaks)
-- [Setup React Project](#setup-react-project)
+- [React Project Setup](#react-project-setup)
   - [Create App](#create-app)
   - [Run App](#run-app)
 - [Linting Setup](#linting-setup)
   - [Install Dev Dependencies](#install-dev-dependencies)
   - [Create Linting Configuration file manually](#create-linting-configuration-file-manually)
+  - [Solve conflict between ".eslintrc.json" and "BaseConfig"](solve-conflict-between-".eslintrc.json"-and-"baseconfig")
 
 <!-- Editor Setup -->
 
 ## Editor Setup
 
-  Editor: VS Code
+  Editor: VS Code (Visual Studio Code)
   
 ### Plugins
 
@@ -79,7 +80,7 @@ To do that, just click LF/CRLF in bottom right corner `Status Bar` of editor, cl
 
 <hr>
 
-## Setup React Project
+## React Project Setup
 
 In order to create a react based project, follow the instructions below.
 
@@ -147,11 +148,10 @@ yarn lint
 ```sh
 npm run lint
 ```
-<hr>
 
 ### Create Linting Configuration File Manually
 
-Create a `.eslintrc` file in the project root and Copy-Paste the below contents:
+Create a `.eslintrc.json` file in the project root and Copy-Paste the below contents:
 
 ```js
 {
@@ -202,3 +202,11 @@ Create a `.eslintrc` file in the project root and Copy-Paste the below contents:
   "plugins": ["prettier", "react", "react-hooks"]
 }
 ```
+### Solve conflict between ".eslintrc.json" and "BaseConfig"
+
+After doing all these steps, there would occur a conflict between ".eslintrc.json" and "BaseConfig" due to version differences.
+`ERROR in [eslint] Plugin "react" was conflicted between ".eslintrc" and "BaseConfig .....`
+
+To solve this, create a file named, `.env` in `my-app-name` folder and paste the below code:
+`SKIP_PREFLIGHT_CHECK = true`
+
