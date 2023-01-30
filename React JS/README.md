@@ -1,6 +1,10 @@
-# React JS Project Basic Setup
-  
-  This Description contains the full guide to setup initial `React JS` project using `create-react-app` in any Personal Computer.
+# React JS Project Basic Setup #
+
+This Description contains the full guide to setup initial `React JS` project using `create-react-app` in any Personal Computer.
+
+[![React JS](https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=React&logoColor=black)](#)
+[![VSCode](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](#)
+[![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white)](#)
   
 ## Table of Contents
 
