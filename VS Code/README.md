@@ -22,7 +22,9 @@
   C/C++ Extension pack
   Code Runner
   Code Spell Checker
+  Colorize
   Community Material theme
+  Console Ninja
   Css Peek
   Dracula Official [Theme]
   Error Lens
@@ -34,13 +36,15 @@
   Intellicode
   JavaScript (ES6) Code Snippets
   Live Server
+  Material Icon Theme / vscode-icons
   Path Intellisense
+  Postman
   Prettier - Code Formatter
   Quokka.js
   Snipped
+  Tabnine AI
   Tailwind CSS IntelliSense
   Turbo Console Log
-  vscode-icons
   vscode-pdf
 */
 
@@ -50,11 +54,13 @@
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
   "editor.mouseWheelZoom": true,
-  "editor.minimap.enabled": false,
-  // "editor.minimap.size": "fill",
-  // "editor.minimap.showSlider": "always",
+  "editor.minimap.enabled": true,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.maxColumn": 30,
   "editor.fontLigatures": true,
   "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
+  "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
   "editor.guides.bracketPairs": true,
   "editor.bracketPairColorization.enabled": true,
@@ -77,10 +83,13 @@
 
   // Editor Cursor
   "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
 
   //  Debug Console
   "debug.console.fontSize": 16,
+
+  // File Explorer
+  "explorer.confirmDragAndDrop": false,
 
   // Terminal
   "terminal.integrated.fontSize": 16,
@@ -90,8 +99,8 @@
   "terminal.integrated.fontFamily": "Fira Code, Consolas",
 
   // Work Bench
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#ffff00",
@@ -111,23 +120,17 @@
   "liveServer.settings.root": "/",
   "liveServer.settings.donotShowInfoMsg": true,
 
+  // Prettier [Extension Settings]
+  "prettier.singleQuote": true,
+
   // Snipped (Screenshot) [Extension Settings]
   "snipped.enablePng": true,
 
   // Better Comments [Extension Settings]
   "better-comments.tags": [
     {
-      "tag": "!",
-      "color": "#FF2D00", // !Red
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
       "tag": "?",
-      "color": "#3498DB", // ?Blue
+      "color": "#FF2D00", // ? Red
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -135,17 +138,26 @@
       "italic": false
     },
     {
-      "tag": "//",
-      "color": "#ffffff", // //White
-      "strikethrough": true,
+      "tag": "!",
+      "color": "#3498DB", // ! Blue
+      "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
       "italic": false
     },
     {
-      "tag": "todo",
-      "color": "#FF8C00", // todo Orange
+      "tag": "#",
+      "color": "#ffffff", // # White
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "-",
+      "color": "#FF8C00", // - Orange
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -154,7 +166,7 @@
     },
     {
       "tag": "*",
-      "color": "#FFD700", // *Golden
+      "color": "#FFD700", // * Golden
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -164,7 +176,7 @@
 
     {
       "tag": "^",
-      "color": "#FF1493", // ^Pink
+      "color": "#FF1493", // ^ Pink
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -173,20 +185,17 @@
     }
   ],
 
-  // Code Spell Checker [Extension Settings]
-  "cSpell.userWords": [
-    "SHIBAM",
-    "vsintellicode",
-    // Add More Words 
-  ],
+  // Colorize [Extension Settings]
+  "colorize.languages": ["html", "css", "javascript", "javascriptreact"],
 
   // Tailwind CSS
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "html": "html",
-    "javascript": "javascript",
-    "css": "css"
+    "css": "css",
+    "javascript": "javascript"
   },
+  "tailwindCSS.hovers": true,
 
   "C_Cpp.files.exclude": {
     "**/.vscode": true,
@@ -198,22 +207,19 @@
   "errorLens.followCursorMore": -1, // Stops showing error statements in the editor
 
   // Code Formatting
-  "[javascript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.organizeImports": true
-  },
-
-  // ESLint [Extension Settings]
-  "eslint.alwaysShowStatus": true,
+  // "[javascript]": {
+  //   "editor.formatOnSave": false,
+  //   "editor.defaultFormatter": null
+  // },
+  // "[javascriptreact]": {
+  //   "editor.formatOnSave": false,
+  //   "editor.defaultFormatter": null
+  // },
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true,
+  //   "source.fixAll.tslint": true,
+  //   "source.organizeImports": true
+  // },
 
   // C++ Intellisense [Extension Settings]
 
@@ -236,6 +242,13 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "none",
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.env.windows": {}
 }
 ```
